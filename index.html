@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEX SECURITY</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,42 +16,54 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>LEX SECURITY</title>
   </head>
   <body>
-    <header>
-      <div class="header__container _container">
-        <a href=""><span lang="en-EN">LEX/</span></a>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="" class="logo link"><span lang="en-EN">LEX/</span></a>
 
-        <nav>
-          <ul>
-            <li><a href="">Про нас</a></li>
-            <li><a href="">Ціни</a></li>
-            <li><a href="">Партнери</a></li>
-            <li><a href="">Рішення</a></li>
-            <li><a href="">Контакти</a></li>
+          <ul class="menu__list list">
+            <li class="menu__item"><a href="" class="menu__link link">Про нас</a></li>
+            <li class="menu__item"><a href="" class="menu__link link">Ціни</a></li>
+            <li class="menu__item"><a href="" class="menu__link link">Партнери</a></li>
+            <li class="menu__item"><a href="" class="menu__link link">Рішення</a></li>
+            <li class="menu__item"><a href="" class="menu__link link">Контакти</a></li>
           </ul>
-        </nav>
 
-        <button>Замовити дзвінок</button>
+          <button class="nav__button">Замовити дзвінок</button>
+        </nav>
       </div>
     </header>
 
     <main>
       <!-- HERO -->
-      <section>
-        <h1><span lang="en-EN">LEX SECURITY</span> ОХОРОННІ СИСТЕМИ ДЛЯ ВАНТАЖОПЕРЕВЕЗЕНЬ</h1>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            <span lang="en-EN">LEX SECURITY</span> <br />
+            ОХОРОННІ <br />
+            СИСТЕМИ ДЛЯ <br />
+            <span class="hero__title--last-word">ВАНТАЖО</span>
+            <button class="hero__button">Послуги</button> <br />
+            ПЕРЕВЕЗЕНЬ
+          </h1>
 
-        <button>Послуги</button>
-
-        <p>
-          Компания <span lang="en-EN">LEX</span> займається розробкою охоронних рішень в області
-          вантажоперевезень.
-        </p>
-        <p>
-          Наше обладнання гарантує безпеку вантажу в дорозі та під час стоянки по всій території
-          України та за її межами.
-        </p>
+          <div class="hero__description">
+            <p class="description__item">
+              <span class="description__item--left"
+                >Компанія <span lang="en-EN">LEX</span> займається розробкою охоронних рішень в
+                області вантажоперевезень.</span
+              >
+            </p>
+            <p class="description__item">
+              <span class="description__item--right"
+                >Наше обладнання гарантує безпеку вантажу в дорозі та під час стоянки по всій
+                території України та за її межами.</span
+              >
+            </p>
+          </div>
+        </div>
       </section>
 
       <!-- FEATURES -->
@@ -180,7 +193,7 @@
           </li>
           <li>
             <img src="" alt="" />
-            <address>Україна, м. Харків, вул. Плеханівська, 2/5</address>
+            <address class="address">Україна, м. Харків, вул. Плеханівська, 2/5</address>
           </li>
         </ul>
       </section>
