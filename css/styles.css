@@ -186,7 +186,7 @@ body {
 
   margin-left: auto;
 
-  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .nav__button:hover,
@@ -238,13 +238,11 @@ body {
   margin-left: -20px;
 
   font-family: var(--font);
+  color: var(--main-content-color);
   font-size: 25px;
   font-weight: 500;
   line-height: 1.36;
   text-align: center;
-  color: var(--main-content-color);
-
-  transition: 0.5s;
 }
 
 .hero__button:hover,
@@ -304,6 +302,9 @@ body {
 
 /* ==================== PRICES ==================== */
 .prices {
+  background-image: url(../img/desktop/prices-desktop.png);
+  background-size: cover;
+  background-position: center;
   padding-top: 140px;
   padding-bottom: 207px;
 }
@@ -314,6 +315,63 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 0.8;
+  margin-bottom: 60px;
+}
+
+.prices__subtitle-one,
+.prices__subtitle-two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prices__subtitle-two {
+  margin-top: 100px;
+}
+
+.prices__subtitle {
+  font-family: var(--font);
+  color: var(--main-content-color);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 0.8;
+  margin-left: 106px;
+}
+
+.prices__subtitle:after,
+.prices__subtitle:after {
+  content: '';
+  display: inline-block;
+  width: 109px;
+  border: 1px solid var(--main-content-color);
+  vertical-align: middle;
+}
+
+.prices__button {
+  width: 370px;
+  height: 100px;
+  background: var(--buttons-color);
+  border-radius: 40px;
+  font-family: var(--font);
+  color: var(--main-content-color);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.36;
+  text-align: center;
+}
+
+.prices__button:hover,
+.prices__button:focus {
+  background: linear-gradient(94.87deg, #b620e0 -22.41%, #0e44fc 103.54%);
+}
+
+.prices__description {
+  font-family: var(--font);
+  color: var(--main-content-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.37;
 }
 
 /* ==================== PARTNERS ==================== */
@@ -446,6 +504,9 @@ body {
 
 /* ==================== FEEDBACK ==================== */
 .feedback {
+  background-image: url(../img/desktop/feedback-desktop.png);
+  background-size: cover;
+  background-position: center;
   padding-top: 140px;
   padding-bottom: 235px;
 }
@@ -471,6 +532,7 @@ body {
   border: var(--stroke-color);
   border-radius: 40px;
   background: var(--main-content-color);
+  outline: none;
   margin-bottom: 20px;
   text-align: center;
 
@@ -499,6 +561,11 @@ body {
   cursor: pointer;
 }
 
+.form__btn:hover,
+.form__btn:focus {
+  background: linear-gradient(94.87deg, #b620e0 -22.41%, #0e44fc 103.54%);
+}
+
 /* ==================== CONTACT ==================== */
 .contact {
   padding-top: 150px;
@@ -517,6 +584,13 @@ body {
   margin-bottom: 128px;
 }
 
+.contact__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .contact__list {
   display: flex;
   justify-content: center;
@@ -527,16 +601,19 @@ body {
   margin-right: 85px;
 }
 
-/* .contact__icon {
-
-} */
+.contact__icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+  margin-bottom: 34px;
+}
 
 .contact__phone {
   font-family: var(--font);
   color: var(--main-content-color);
   font-size: 16px;
   font-weight: 500;
-  line-height: 0.8;
+  line-height: 1.3;
 }
 
 .instagram {

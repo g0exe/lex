@@ -116,17 +116,21 @@
             ОХОРОННОЇ СИСТЕМИ /
           </h2>
 
-          <h3>Жорсткий напівпричеп</h3>
-          <button>119 &#36;</button>
+          <div class="prices__subtitle-one">
+            <h3 class="prices__subtitle">Жорсткий напівпричеп</h3>
+            <button class="prices__button button">119 &#36;</button>
+          </div>
 
-          <h3>Тентовий напівпричеп</h3>
-          <button>239 &#36;</button>
+          <div class="prices__subtitle-two">
+            <h3 class="prices__subtitle">Тентовий напівпричеп</h3>
+            <button class="prices__button button">239 &#36;</button>
+          </div>
 
-          <p>
+          <p class="prices__description">
             У вартість входить також встановлення та налаштування обладнання спеціалістами компанії
             <span lang="en-EN">LEX</span>.
           </p>
-          <p>
+          <p class="prices__description">
             Актуальність цін можна дізнатись у менеджера. Розмір щомісячної абонентської плати за
             підключення до пульту моніторингу та охорони обговорюється індивідуально.
           </p>
@@ -143,16 +147,16 @@
 
           <ul class="partners__list list">
             <li class="partners__item">
-              <img src="./img/icons/partner-1.svg" alt="" class="partners__img" />
+              <img src="./img/partners/partner 1.png" alt="" class="partners__img" />
             </li>
             <li class="partners__item">
-              <img src="./img/icons/partner-2.svg" alt="" class="partners__img" />
+              <img src="./img/partners/partner 2.png" alt="" class="partners__img" />
             </li>
             <li class="partners__item">
-              <img src="./img/icons/partner-3.svg" alt="" class="partners__img" />
+              <img src="./img/partners/partner 3.png" alt="" class="partners__img" />
             </li>
             <li class="partners__item">
-              <img src="./img/icons/partner-4.svg" alt="" class="partners__img" />
+              <img src="./img/partners/partner 4.png" alt="" class="partners__img" />
             </li>
           </ul>
         </div>
@@ -271,15 +275,19 @@
           <ul class="contact__list list">
             <div class="contact__item-wrapper">
               <li class="contact__item">
-                <img src="./img/icons/phone.svg" alt="" class="contact__icon" />
-                <a href="tel:+380668734323" class="contact__phone link">+38(066)873-43-23</a> <br />
+                <svg class="contact__icon">
+                  <use href="./img/icons/sprite.svg#phone"></use>
+                </svg>
+                <a href="tel:+380668734323" class="contact__phone link">+38(066)873-43-23</a><br />
                 <a href="tel:+380680489198" class="contact__phone link">+38(068)048-91-98</a>
               </li>
             </div>
 
             <div class="contact__item-wrapper">
               <li class="contact__item">
-                <img src="./img/icons/instagram.svg" alt="" class="contact__icon" />
+                <svg class="contact__icon">
+                  <use href="./img/icons/sprite.svg#instagram"></use>
+                </svg>
                 <a
                   href="https://www.instagram.com/lexproject_security/"
                   target="_blank"
@@ -292,9 +300,11 @@
 
             <div class="contact__item-wrapper">
               <li class="contact__item">
-                <img src="./img/icons/location.svg" alt="" class="contact__icon" />
+                <svg class="contact__icon">
+                  <use href="./img/icons/sprite.svg#location"></use>
+                </svg>
                 <address class="contact__address address">
-                  Україна, м. Харків, <br />
+                  Україна, м. Харків,<br />
                   вул. Плеханівська, 2/5
                 </address>
               </li>
